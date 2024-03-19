@@ -12,6 +12,8 @@ public class Conference extends Event {
     @OneToMany
     private List<Speaker> speakers;
 
+
+
     public Conference(Long id, Date date, Duration duration, String location, String title, List<Guest> guests) {
         super(id, date, duration, location, title, guests);
     }

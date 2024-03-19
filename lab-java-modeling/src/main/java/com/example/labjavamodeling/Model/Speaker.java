@@ -13,6 +13,9 @@ public class Speaker {
     private String name;
     private Duration presentationDuration;
 
+    public Speaker() {
+    }
+
     public Speaker(Long id, String name, Duration presentationDuration) {
         this.id = id;
         this.name = name;

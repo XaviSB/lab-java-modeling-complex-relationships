@@ -16,13 +16,18 @@ public class Chapter {
     private String district;
 
     @ManyToOne
+    @JoinColumn(name = "association_id")
     private Association association;
 
     @OneToOne
+    @JoinColumn(name = "president_id")
     private Member president;
 
     @OneToMany(mappedBy = "chapter", cascade = CascadeType.ALL)
     private List<Member> members;
+
+    public Chapter() {
+    }
 
     public Chapter(Long id, String name, String district, Association association, Member president, List<Member> members) {
         this.id = id;

@@ -16,6 +16,9 @@ public class Association {
     @OneToMany(mappedBy = "association", cascade = CascadeType.ALL)
     private List<Chapter> chapters;
 
+    public Association() {
+    }
+
     public Association(Long id, String name, List<Chapter> chapters) {
         this.id = id;
         this.name = name;

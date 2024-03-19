@@ -23,7 +23,10 @@ import java.util.List;
         @ManyToMany
         private List<Guest> guests;
 
-        public Event(Long id, Date date, Duration duration, String location, String title, List<Guest> guests) {
+    public Event() {
+    }
+
+    public Event(Long id, Date date, Duration duration, String location, String title, List<Guest> guests) {
             this.id = id;
             this.date = date;
             this.duration = duration;

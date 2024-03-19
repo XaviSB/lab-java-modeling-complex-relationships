@@ -16,6 +16,9 @@ public class Guest {
     @ManyToOne
     private Event event;
 
+    public Guest() {
+    }
+
     public Guest(Long id, String name, Event event) {
         this.id = id;
         this.name = name;

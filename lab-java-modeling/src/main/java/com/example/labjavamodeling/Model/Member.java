@@ -21,6 +21,9 @@ public class Member {
     @ManyToOne
     private Chapter chapter;
 
+    public Member() {
+    }
+
     public Member(Long id, String name, Chapter chapter) {
         this.id = id;
         this.name = name;
